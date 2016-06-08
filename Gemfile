@@ -35,8 +35,6 @@ group :test do
   gem 'coveralls'
 end
 
-# Optional PostgreSQL for production
-gem 'pg', group: :postgresql
 # Optional MySQL for production
 gem 'mysql2', group: :mysql
 # Optional SQLite for development
