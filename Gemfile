@@ -22,7 +22,7 @@ gem 'pry', group: [:development, :test]
 group :development do
   # Spring application pre-loader
   gem 'spring'
-  
+
   # open sent emails in the browser
   gem 'letter_opener'
 end
@@ -84,3 +84,9 @@ gem 'fancybox2-rails', '~> 0.2.8'
 
 # gravatar for user avatar images
 gem 'gravatar_image_tag'
+
+# capistrano
+gem 'capistrano'
+gem 'capistrano-bundler'
+gem 'capistrano-rails'
+gem 'capistrano-rvm', github: "capistrano/rvm"

@@ -1,0 +1,10 @@
+development:
+  GOOGLE_CLIENT_ID: 'add_credentials_here'
+  GOOGLE_SECRET: 'add_credentials_here'
+  DB_USERNAME: 'user'
+  DB_PASSWORD: 'pass'
+production:
+  FOO: 'bar'
+  SECRET_KEY_BASE: 'key'
+test:
+  FOO: 'bar'
