@@ -10,17 +10,14 @@ agent = User.where(email: 'jfuentes.moodhack@gmail.com').first_or_create({ email
 agent.agent = true
 agent.save!
 
+agent = User.where(email: 'mromero.moodhack@gmail.com').first_or_create({ email: 'mromero.moodhack@gmail.com', password: 'changeme', password_confirmation: 'changeme' })
+agent.agent = true
+agent.save!
+
 customer = User.where(email: 'romerramos@gmail.com').first_or_create({ email: 'romerramos@gmail.com', password: 'changeme', password_confirmation: 'changeme' })
 customer.save!
 
-labels = [
-    'bug',
-    'feedback',
-    'asking',
-    'resources',
-]
-
-customer.labels << Label.where(name: labels.sample).first_or_create!
+Label.create([{ name: 'bug' }, { name: 'feedback' }, { name: 'question' }, { name: 'resources' }, { name: 'schedule' }])
 
 # if ENV['CLEAN'].present?
 #   User.delete_all

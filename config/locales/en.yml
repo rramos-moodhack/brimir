@@ -26,7 +26,7 @@ en:
     end: Let's start!
 
 # devise/sessions/new
-  sign_in: Sign into Brimir
+  sign_in: Sign in
 
 # devise/shared/links
   forgot_password: Forgot your password?
